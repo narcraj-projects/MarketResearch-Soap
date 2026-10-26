@@ -1467,7 +1467,7 @@
     },
     {
       "path": "scripts/prepare-overview.cjs",
-      "sha256": "e9420ff3e65be95c444b40c45a38554ce8fbf60509976c55830cb5be6872f273"
+      "sha256": "25e8611f3dca185abf284aace1525cc0bf8bcae471ffcc53b149f877f30a541f"
     },
     {
       "path": "scripts/project.ps1",
@@ -1503,11 +1503,11 @@
     },
     {
       "path": "submission/Lather-Lens-Overview.html",
-      "sha256": "47582b4009972079968f2bee1de41976aadc2e4c61faf531f8d1d274209960f4"
+      "sha256": "41d879b91396852eb8c2cc835ead26386c8f15c048d2ba48d859bbee9d555792"
     },
     {
       "path": "submission/Lather-Lens-Overview.pdf",
-      "sha256": "047487119914feb10e4787702a4464c7b9b52fcb53ca706bcd1987da016a0083"
+      "sha256": "e6ae8c594eebde37fd5e75d3122c709fdb7e114c8b3b9eb1311a8f6192ae0694"
     },
     {
       "path": "supabase/.branches/_current_branch",
