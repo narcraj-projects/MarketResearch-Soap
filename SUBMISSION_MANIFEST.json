@@ -851,7 +851,7 @@
     },
     {
       "path": "backend/tools/package_submission.py",
-      "sha256": "336803753a1242e79e3d9b6e1a5066ffabf7cf5c719343481df4a8ba1c94dfed"
+      "sha256": "3528f9fd036992020abc41004b17f569a3fcef0295fb90e5c0bd23c8cc43c12e"
     },
     {
       "path": "backend/tools/prepare_history_ui.py",
@@ -1023,7 +1023,7 @@
     },
     {
       "path": "docs/LIVE_PILOT_RESULTS.md",
-      "sha256": "799c134f0c75294987d5a8d5ed6196eed037cfd70ef193f84cd73ed9b1595115"
+      "sha256": "824c361b1e78d4cacbca6da1c375e6e31001880a70bf51fae1830e9d52b80b2b"
     },
     {
       "path": "docs/LIVE_RECEIPT.json",
@@ -1031,7 +1031,7 @@
     },
     {
       "path": "docs/LIVE_STAGE_FILES.json",
-      "sha256": "ef29d0589361e9f103039a8fc5c65dc960662bc970a12d14f2eee89364134f17"
+      "sha256": "19786484cab08bff949441fec8520977b2560d4792a966ea77736e4cace9e98c"
     },
     {
       "path": "docs/MODEL_BENCHMARK.md",

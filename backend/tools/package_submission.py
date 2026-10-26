@@ -74,9 +74,19 @@ def files(clean=False):
             if not path.is_file():
                 continue
             relative = path.relative_to(ROOT)
-            if clean and relative.parts[0] == "docs" and (
-                any(part in {"Available credits", "Project handout", "ui-screenshots"} for part in relative.parts)
-                or "PRD" in path.name or path.suffix == ".docx" or path.name == "Soap Market Research Agent — UI.html"
+            if (
+                clean
+                and relative.parts[0] == "docs"
+                and (
+                    any(
+                        part
+                        in {"Available credits", "Project handout", "ui-screenshots"}
+                        for part in relative.parts
+                    )
+                    or "PRD" in path.name
+                    or path.suffix == ".docx"
+                    or path.name == "Soap Market Research Agent — UI.html"
+                )
             ):
                 continue
             if any(part in EXCLUDED for part in relative.parts):
@@ -106,7 +116,7 @@ def files(clean=False):
             for name in (
                 "Lather-Lens-Overview.pdf",
                 "Lather-Lens-Overview.html",
-                "Lather-Lens-3m30.mp4",
+                "Lather-Lens-4m-FINAL.mp4",
                 "Lather-Lens-LIVE-report.html",
                 "Lather-Lens-LIVE-report.csv",
             )

@@ -1,5 +1,5 @@
 {
-  "measured_at": "2026-10-26T05:30:01.801336+00:00",
+  "measured_at": "2026-10-26T05:34:33.592709+00:00",
   "basis": "Compared with private pre-live snapshot; original source documents retained. Manifest excludes its own hash.",
   "changed_files": [
     {
@@ -210,7 +210,7 @@
     {
       "path": "backend/tools/package_submission.py",
       "change": "created",
-      "sha256": "336803753a1242e79e3d9b6e1a5066ffabf7cf5c719343481df4a8ba1c94dfed"
+      "sha256": "3528f9fd036992020abc41004b17f569a3fcef0295fb90e5c0bd23c8cc43c12e"
     },
     {
       "path": "backend/tools/refresh_local_session.py",
@@ -230,7 +230,7 @@
     {
       "path": "docs/LIVE_PILOT_RESULTS.md",
       "change": "created",
-      "sha256": "799c134f0c75294987d5a8d5ed6196eed037cfd70ef193f84cd73ed9b1595115"
+      "sha256": "824c361b1e78d4cacbca6da1c375e6e31001880a70bf51fae1830e9d52b80b2b"
     },
     {
       "path": "docs/LIVE_RECEIPT.json",
