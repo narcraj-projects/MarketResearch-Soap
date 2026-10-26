@@ -1,0 +1,20 @@
+{
+  "label": "DEMO",
+  "dataset_version": "scout-demo-v1",
+  "sha256": {
+    "SC01-clean.json": "0200f1d0378b8e478f3703474e7ce90aca88e90ddbc27b51336ac2d57c3bb638",
+    "SC02-fewer.json": "2624f575343c8b8bb0965871fbb7922708a9afbaa23f4011848d611b915959c6",
+    "SC03-empty.json": "b4b684312dda7d3fd9079e35879363046da144985a5bbba43fbfa578943bba44",
+    "SC04-irrelevant.json": "fea2a5ea07e039ae71a595a039c37d247f54362a023490893b7a5466a99e2fbc",
+    "SC05-duplicate-domains.json": "71933cb81ecb293b9006220c0f2f5233cac1ea0d31917302c5a23cbbd84a5e55",
+    "SC06-rate-limit.json": "b194de22e3c33981365c64231f7fb48acc55bbf252b28016af02310df1d5fb09",
+    "SC07-timeout.json": "0655a0f528bf2df29701498505c7e51d05255cbb360ae52d57bcb31a478be509",
+    "SC08-denied.json": "2fabfefca3c6b2de9d53363a6387e8be20f5ad3a06b1110c8f2d4449ffadec50",
+    "SC09-malformed.json": "40621ca3195234e64f5f58ab9dae321be535ee7ce8452ec886855efcb1b86896",
+    "SC10-unsafe-urls.json": "af1d4c371ecae190e8d68aaf89ec467ae08b41965446a2227c7ed1c062999ff1",
+    "SC11-unknown-fit.json": "f4c22eb1089ee117f4095d362e5ed8ca7c68a12ac56852e083a33265a17f874b",
+    "SC12-no-quota-invention.json": "0240000eafd3391adbbac050846ee9f9f46945a20a063f57353e8bce861bc8dc",
+    "SC13-server-error.json": "9d929ae9e48eb04c9364886fce6e5c48ad736dd1b86ab72ef51821407c2fc199",
+    "SC14-retry-deadline.json": "6b6f6edfd4bdf6c6dbda2d9f50e0ece967a8c17eb15e7acb35e30c767e28606f"
+  }
+}

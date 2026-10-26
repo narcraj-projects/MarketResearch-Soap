@@ -1,0 +1,512 @@
+{
+  "label": "DEMO",
+  "schema_version": "golden-dataset-1.0",
+  "dataset_version": "lather-golden-v1",
+  "failure_cohort": [
+    "D04",
+    "D05",
+    "D06",
+    "D10",
+    "D12"
+  ],
+  "owner_report_cohort": [
+    "D01",
+    "D02",
+    "D07",
+    "D08",
+    "D11"
+  ],
+  "cases": [
+    {
+      "id": "D01",
+      "label": "DEMO",
+      "title": "Clean three-competitor run",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120"
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D01",
+        "math"
+      ],
+      "acceptance": [
+        "A02",
+        "A03",
+        "A07"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D02",
+      "label": "DEMO",
+      "title": "Two credible competitors",
+      "mode": "graph",
+      "search": "search-fewer.json",
+      "web": "web-clean.json",
+      "expected_status": "complete",
+      "expected_competitors": 2,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D02",
+        "math"
+      ],
+      "acceptance": [
+        "A02",
+        "A03",
+        "A07"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D03",
+      "label": "DEMO",
+      "title": "Irrelevant discovery",
+      "mode": "graph",
+      "search": "search-irrelevant.json",
+      "web": "web-clean.json",
+      "expected_status": "partial",
+      "expected_competitors": 0,
+      "expected_units": {},
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D03"
+      ],
+      "acceptance": [
+        "A02",
+        "A03",
+        "A07"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D04",
+      "label": "DEMO",
+      "title": "Terminal third-lane search timeout after two saved lanes",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-terminal-news-timeout.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120"
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D04",
+        "math"
+      ],
+      "acceptance": [
+        "A05"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D05",
+      "label": "DEMO",
+      "title": "429 recovery and deadline refusal",
+      "mode": "rate_limit_component",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "component_complete",
+      "expected_competitors": null,
+      "expected_units": {},
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "D05"
+      ],
+      "acceptance": [
+        "A05"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D06",
+      "label": "DEMO",
+      "title": "Restricted competitor B website",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-denied-b.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120"
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D06",
+        "math"
+      ],
+      "acceptance": [
+        "A05"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D07",
+      "label": "DEMO",
+      "title": "Site and marketplace price conflict",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-site-marketplace-conflict.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120",
+          "140"
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D07",
+        "math"
+      ],
+      "acceptance": [
+        "A02",
+        "A03",
+        "A07"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D08",
+      "label": "DEMO",
+      "title": "Missing weight and ingredient list",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-missing-fields.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          null
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D08",
+        "math"
+      ],
+      "acceptance": [
+        "A02",
+        "A03",
+        "A07"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D09",
+      "label": "DEMO",
+      "title": "Different variant/pack basis",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-pack-mismatch.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          null
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D09",
+        "math"
+      ],
+      "acceptance": [
+        "A02",
+        "A03",
+        "A07"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D10",
+      "label": "DEMO",
+      "title": "Two malformed model outputs exhaust repair",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "partial",
+      "expected_competitors": 3,
+      "expected_units": {},
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D10"
+      ],
+      "acceptance": [
+        "A05"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D11",
+      "label": "DEMO",
+      "title": "Attributed unsupported medical claim",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-medical-claim.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120"
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D11",
+        "math"
+      ],
+      "acceptance": [
+        "A02",
+        "A03",
+        "A07"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D12",
+      "label": "DEMO",
+      "title": "Unsupported material claim requires targeted revision",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120"
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D12",
+        "math"
+      ],
+      "acceptance": [
+        "A05"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D13",
+      "label": "DEMO",
+      "title": "Actual process restart, pending approval and stale fence",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120"
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D13",
+        "math"
+      ],
+      "acceptance": [
+        "A06",
+        "A08"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D14",
+      "label": "DEMO",
+      "title": "Missing/foreign/stale approval refusal",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "report_review",
+      "expected_competitors": 3,
+      "expected_units": {},
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D14"
+      ],
+      "acceptance": [
+        "A06",
+        "A08"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D15",
+      "label": "DEMO",
+      "title": "Dated price change and retrieval gap",
+      "mode": "history_component",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "component_complete",
+      "expected_competitors": null,
+      "expected_units": {},
+      "checks": [
+        "schema",
+        "D15"
+      ],
+      "acceptance": [
+        "A02",
+        "A03",
+        "A07"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D16",
+      "label": "DEMO",
+      "title": "Concurrent call cap and cancellation",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "cancelled",
+      "expected_competitors": 3,
+      "expected_units": {},
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D16"
+      ],
+      "acceptance": [
+        "A06",
+        "A08"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    },
+    {
+      "id": "D17",
+      "label": "DEMO",
+      "title": "Idempotent starts, decisions and save",
+      "mode": "graph",
+      "search": "search-clean.json",
+      "web": "web-clean.json",
+      "expected_status": "complete",
+      "expected_competitors": 3,
+      "expected_units": {
+        "DEMO-A-100": [
+          "120"
+        ],
+        "DEMO-C-100": [
+          "120"
+        ]
+      },
+      "checks": [
+        "schema",
+        "permissions",
+        "tool_arguments",
+        "trajectory",
+        "no_invented_competitors",
+        "D17",
+        "math"
+      ],
+      "acceptance": [
+        "A06",
+        "A08"
+      ],
+      "limitations": "Synthetic DEMO recordings and mechanical graders; not live research/model quality or owner usefulness."
+    }
+  ]
+}

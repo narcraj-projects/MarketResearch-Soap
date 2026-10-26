@@ -1,0 +1,166 @@
+{
+  "label": "DEMO",
+  "schema_version": "analysis-eval-1.0",
+  "dataset_version": "analysis-demo-v1",
+  "origin": "Synthetic mutations of existing manifest-verified R01 DEMO recording. No real competitors, sources, prices, model outputs or results.",
+  "builder": "tests/analysis_support.py",
+  "cases": [
+    {
+      "id": "AN01-same-sku",
+      "mode": "known",
+      "expected": {
+        "first_unit": "120.00000000",
+        "review": "ready_for_human"
+      }
+    },
+    {
+      "id": "AN02-per-bar-pack",
+      "mode": "pack",
+      "expected": {
+        "first_unit": "150.00000000",
+        "review": "ready_for_human"
+      }
+    },
+    {
+      "id": "AN03-missing-sku",
+      "mode": "no_sku",
+      "expected": {
+        "first_unit": null,
+        "review": "ready_for_human",
+        "issue": "normalization_unavailable"
+      }
+    },
+    {
+      "id": "AN04-ambiguous-pack",
+      "mode": "ambiguous",
+      "expected": {
+        "first_unit": null,
+        "review": "ready_for_human"
+      }
+    },
+    {
+      "id": "AN05-mismatched-offer",
+      "mode": "wrong_offer",
+      "expected": {
+        "first_unit": null,
+        "review": "ready_for_human"
+      }
+    },
+    {
+      "id": "AN06-no-fx",
+      "mode": "currency",
+      "expected": {
+        "price_groups": 0,
+        "review": "ready_for_human"
+      }
+    },
+    {
+      "id": "AN07-conflict",
+      "mode": "conflict",
+      "expected": {
+        "conflicts": 1,
+        "review": "ready_for_human",
+        "issue": "conflicting_evidence"
+      }
+    },
+    {
+      "id": "AN08-stale",
+      "mode": "known",
+      "age_days": 60,
+      "expected": {
+        "opportunities": 0,
+        "price_groups": 0,
+        "review": "ready_for_human",
+        "issue": "source_freshness"
+      }
+    },
+    {
+      "id": "AN09-insufficient",
+      "mode": "empty",
+      "expected": {
+        "opportunities": 0,
+        "review": "ready_for_human",
+        "issue": "missing_evidence"
+      }
+    },
+    {
+      "id": "AN10-medical-attribution",
+      "mode": "medical",
+      "attack": "medical_fact",
+      "expected": {
+        "review": "revise",
+        "issue": "unsupported_medical_or_certification_claim"
+      }
+    },
+    {
+      "id": "AN11-five-grounded-rules",
+      "mode": "rich",
+      "expected": {
+        "opportunities": 5,
+        "review": "ready_for_human"
+      }
+    },
+    {
+      "id": "AN12-malformed",
+      "mode": "rich",
+      "attack": "malformed",
+      "expected": {
+        "review": "unresolved",
+        "issue": "schema_invalid"
+      }
+    },
+    {
+      "id": "AN13-targeted-arithmetic",
+      "mode": "rich",
+      "attack": "arithmetic",
+      "expected": {
+        "review": "revise",
+        "issue": "sku_pack_arithmetic"
+      }
+    },
+    {
+      "id": "AN14-valid-irrelevant-citation",
+      "mode": "rich",
+      "attack": "irrelevant_citation",
+      "expected": {
+        "review": "revise",
+        "issue": "source_value_or_attribution"
+      }
+    },
+    {
+      "id": "AN15-wrong-evidence-binding",
+      "mode": "rich",
+      "attack": "binding",
+      "expected": {
+        "review": "unresolved",
+        "issue": "input_binding"
+      }
+    },
+    {
+      "id": "AN16-revision-bound",
+      "mode": "rich",
+      "attack": "arithmetic",
+      "revisions_remaining": false,
+      "expected": {
+        "review": "unresolved",
+        "issue": "sku_pack_arithmetic"
+      }
+    },
+    {
+      "id": "AN17-round-half-up",
+      "mode": "rounding",
+      "expected": {
+        "first_unit": "0.00000001",
+        "review": "ready_for_human"
+      }
+    },
+    {
+      "id": "AN18-zero-is-not-missing",
+      "mode": "zero",
+      "expected": {
+        "first_unit": "0.00000000",
+        "review": "ready_for_human"
+      }
+    }
+  ]
+}

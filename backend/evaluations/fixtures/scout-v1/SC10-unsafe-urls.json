@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "label": "DEMO",
+  "dataset_version": "scout-demo-v1",
+  "tools_version": "tavily-search-1.0",
+  "scorer_version": "soap-scout-1.0",
+  "case_id": "SC10-unsafe-urls",
+  "origin": "Synthetic recorded Tavily-compatible responses; not captured live and not competitor research.",
+  "brief": {
+    "category": "Handmade cold-process soap",
+    "geography": "India",
+    "customer": "sensitive skin",
+    "objective": "DEMO identify relevant makers",
+    "known_competitors": [
+      "DEMO Ghost"
+    ],
+    "preferences": {
+      "price_segment": "Mid-premium"
+    }
+  },
+  "steps": [
+    {
+      "request": {
+        "query": "Handmade cold-process soap makers India sensitive skin official brand",
+        "max_results": 10,
+        "search_depth": "basic",
+        "topic": "general",
+        "include_answer": false,
+        "include_raw_content": false,
+        "include_images": false,
+        "auto_parameters": false,
+        "include_usage": true
+      },
+      "status": 200,
+      "response": {
+        "query": "Handmade cold-process soap makers India sensitive skin official brand",
+        "results": [
+          {
+            "title": "DEMO Maker A | Handmade soap",
+            "url": "https://demo-a.invalid/soap",
+            "content": "DEMO Maker A is an artisan maker. We make handmade soap in India for sensitive skin customers. Shop online. Mid-premium.",
+            "score": 0.8
+          },
+          {
+            "title": "DEMO Maker B | Handmade soap",
+            "url": "https://demo-b.invalid/soap",
+            "content": "DEMO Maker B is an artisan maker. We make handmade soap in India for sensitive skin customers. Shop online. Mid-premium.",
+            "score": 0.8
+          },
+          {
+            "title": "DEMO Maker X | Handmade soap",
+            "url": "http://127.0.0.1/",
+            "content": "DEMO Maker X is an artisan maker. We make handmade soap in India for sensitive skin customers. Shop online. Mid-premium.",
+            "score": 0.8
+          },
+          {
+            "title": "DEMO Maker Y | Handmade soap",
+            "url": "https://user:password@example.invalid/",
+            "content": "DEMO Maker Y is an artisan maker. We make handmade soap in India for sensitive skin customers. Shop online. Mid-premium.",
+            "score": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "query": "Handmade cold-process soap artisan manufacturers India own website",
+        "max_results": 10,
+        "search_depth": "basic",
+        "topic": "general",
+        "include_answer": false,
+        "include_raw_content": false,
+        "include_images": false,
+        "auto_parameters": false,
+        "include_usage": true
+      },
+      "status": 200,
+      "response": {
+        "query": "Handmade cold-process soap artisan manufacturers India own website",
+        "results": []
+      }
+    }
+  ],
+  "expected": {
+    "candidates": 2,
+    "dispatches": 2,
+    "stop_reason": null
+  }
+}

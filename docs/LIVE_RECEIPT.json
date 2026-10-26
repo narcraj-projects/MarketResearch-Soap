@@ -1,0 +1,37 @@
+{
+  "measured_at": "2026-10-26T04:57:13.891319+00:00",
+  "label": "LIVE",
+  "run_id": "901c9544-36f2-402c-b33c-e064631eb769",
+  "run_state": "complete",
+  "report_version": 4,
+  "report_hash": "dbc10d0190947635e6652fb1b595854878177f4923c981a786e7ec16e6d1f6c7",
+  "approval_state": "saved",
+  "export_allowed": true,
+  "competitors": [
+    "Forest Essentials",
+    "Fika Soaps"
+  ],
+  "tavily_credit_reservations": 14,
+  "tavily_credit_cap": 20,
+  "model_usd_cap": "5",
+  "model_receipts": 20,
+  "model_roles": {
+    "scout": 6,
+    "researcher": 6,
+    "analyst": 4,
+    "reviewer": 4
+  },
+  "model_receipt_errors": {
+    "model_http_401": 1,
+    "model_json_invalid": 1
+  },
+  "recorded_tokens": 106461,
+  "reserved_attempts": 1,
+  "reconciled_cost_upper_bound_usd": "1.72039100",
+  "price_invoice_verified": false,
+  "full_material_support": "unmeasured",
+  "owner_usefulness": "unmeasured",
+  "benchmark_winner": null,
+  "remote_trace_exports": 0,
+  "deployment": false
+}

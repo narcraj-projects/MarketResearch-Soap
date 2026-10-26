@@ -1,0 +1,16 @@
+{
+  "label": "DEMO",
+  "dataset_version": "chaos-demo-v1",
+  "sha256": {
+    "model-templates.json": "d701ab72319e484b80c198b2f17da9efbbb6a46c6a081034fd2c068283b3c4db",
+    "scenarios.json": "aa98a2acd7ba8a40fd7b5c350d45fbaf31adbc00427fed757167a90e1c8d6b74",
+    "search-clean.json": "0200f1d0378b8e478f3703474e7ce90aca88e90ddbc27b51336ac2d57c3bb638",
+    "search-empty_results.json": "70815f04b7b20c9f887ef31dc70469157a13de80c59a69531d1b0c5dc897397c",
+    "search-rate_limit.json": "8cb1e44f23c5250e89560e4816d92289a6193b73f34dea64c8b19751d8c63bdc",
+    "search-timeout.json": "6a7f74316d548472b31019a7d199a1ad955c0fc27591173ca14cb63964c148a5",
+    "web-clean.json": "ddaa944d454a18e7b59fe05828f17cd4ab3ccae7a914deea8c49d0186b881c43",
+    "web-conflicting_price.json": "4b31b1209f59951f251a9dde9feb2e35ce277b70ec80d062f40adf5c82d9f20f",
+    "web-inaccessible_page.json": "43fd0d5b68bc0b982b573023e03182f73bc5f5d635e1d3baa0998650ff308cae",
+    "web-missing_weight.json": "4d943f8b1445ae02dba27b47c6b86fab02f43ec9ca4d461f53d99db6bfd1142c"
+  }
+}

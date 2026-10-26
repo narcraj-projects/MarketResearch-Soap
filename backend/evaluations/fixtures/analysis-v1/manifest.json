@@ -1,0 +1,7 @@
+{
+  "label": "DEMO",
+  "dataset_version": "analysis-demo-v1",
+  "sha256": {
+    "cases.json": "39660975fcc32427f7904b5278c0ac7477f28f4d306b69f3ceabc80113f612f0"
+  }
+}

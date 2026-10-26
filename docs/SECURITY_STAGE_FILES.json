@@ -1,0 +1,330 @@
+{
+  "schema_version": "stage-files-1.0",
+  "stage": "B14",
+  "generated_at": "2026-10-25T17:30:41.191290+00:00",
+  "comparison": "pre-stage source SHA snapshot; no Git metadata claim",
+  "self_hash": "not recorded to avoid recursive self-hash",
+  "excluded": "ignored environments, caches, credentials, builds and current regression PNGs",
+  "historical_artifact_notice": "docs/CHAOS_EVAL_RESULTS.json was refreshed by existing CLI; previous bytes unavailable, previous SHA retained; explicit-output/cache default now prevents future implicit replacement",
+  "summary": {
+    "changed": 52,
+    "added": 27,
+    "modified": 25,
+    "deleted": 0
+  },
+  "protected_existing_files_unchanged": 156,
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "status": "modified",
+      "before_sha256": "41241485c7cbae22cfc77af3e6315193032a85d5fd43b95f518bbdebbaaed7e0",
+      "after_sha256": "bd4f2a85f38aa6a1befecad02e726aaa02497e3b6854c70a7f56fd8aa7d612fb"
+    },
+    {
+      "path": "backend/app/auth.py",
+      "status": "modified",
+      "before_sha256": "f23bdeede2b1977fc62a45465753316bfb699509c4ea89ada4ddfbb83ee5e12e",
+      "after_sha256": "f3c0d7557d0e819fa70c5b657a6430eeba3984cbe2057e95918887f2277db14d"
+    },
+    {
+      "path": "backend/app/config.py",
+      "status": "modified",
+      "before_sha256": "48ba78da397dab2e4b4f91f9d68b36f75ed81f858721f5ee69eaa93641de4e90",
+      "after_sha256": "6a8cd8cccc61746f87f2fd9d4ee56b6e4348c5f10101a4279a76eaa58dd0b8ca"
+    },
+    {
+      "path": "backend/app/db.py",
+      "status": "modified",
+      "before_sha256": "87fe9f5f15b90bda36479bd6c2e0aafdbb102d33e5d43f5167e5e7d5737bc367",
+      "after_sha256": "083eb8992e903073e7999fde6322ac599b308a6b5541a4f008d0824b88edb4df"
+    },
+    {
+      "path": "backend/app/evaluations/baseline.py",
+      "status": "modified",
+      "before_sha256": "a863a52e9df55ff487b1c1a43034b0bea96d16551f76168760ba90a022ca12a3",
+      "after_sha256": "b985bd864b7c7e8781033b71cd8214579998b0d19a1f50492354733ac64eea30"
+    },
+    {
+      "path": "backend/app/harness/lease.py",
+      "status": "modified",
+      "before_sha256": "5a0fe780145ae42fb28f5c6785debaef97c3f51d7bed27d8dd44e8ec7bbe4537",
+      "after_sha256": "0c16eb445b26389c3ccc839bd6dcbb5b0bc1141b95c90391eaa120a015436f86"
+    },
+    {
+      "path": "backend/app/harness/research_store.py",
+      "status": "modified",
+      "before_sha256": "004f97cfc74c05b4771c83a81064321f87f6ac846ec806d3d390c3c3f5325f83",
+      "after_sha256": "da0d0dac697e537b3425a7a5326244ad6084854657a6bd296e3fbb5fadf39ad6"
+    },
+    {
+      "path": "backend/app/harness/urls.py",
+      "status": "modified",
+      "before_sha256": "8ab0a11d2a2fec6ab24bfe8d8be480c57c8ef61779d8ba4081c102411ac7be59",
+      "after_sha256": "558a40f8f4f420cb2724bc1f0da202590941024d9647d4f269bd3faf4cbb2e32"
+    },
+    {
+      "path": "backend/app/harness/web_policy.py",
+      "status": "modified",
+      "before_sha256": "fa362ea2e77e07f6cd01b1476ed8f2c77d07f5fed5ac7ffe905b821c48b6c45c",
+      "after_sha256": "66c6df9a8e55e6947bc91a13b10d67f4c6119f23ee5701c8c1ab445c4dc9e0fc"
+    },
+    {
+      "path": "backend/app/main.py",
+      "status": "modified",
+      "before_sha256": "cb2fb965644fb1260db669c6fc69fd6a0135d86e88be512456a274c99e08de28",
+      "after_sha256": "39c1b82a1b6c3d1815d04065d2cca310d2b19349619316b246955573ab596e38"
+    },
+    {
+      "path": "backend/app/queue_policy.py",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "6b957f30b8bb83c2f9f0237d28b53becb3a51d84fe261f41b84a4077ed6e86b5"
+    },
+    {
+      "path": "backend/app/repository.py",
+      "status": "modified",
+      "before_sha256": "8c6a77edd8f0b19af6f95e455ad2fc2f550df9e87a6b97a2e62755f10ba35abb",
+      "after_sha256": "d77d74ad9948dc7e25ffb3af8ab7bcb6233001af97becf62d5cd5fe02fd9a6ca"
+    },
+    {
+      "path": "backend/app/security.py",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "ef64f8542fa7c45e2b701e69ea33a6148cf66574bba4122ed5a1859678ddf146"
+    },
+    {
+      "path": "backend/evaluations/baselines/lather-golden-v1-r3.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "4cfb58aa1dd30d8d71b198868cc61682776eaa1471dd301467f345f3d9e0a541"
+    },
+    {
+      "path": "backend/tests/test_security.py",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "f2de3e75d2da45b36a734ec5c4f6257d23a7b77698874054bd9b2f69c653364b"
+    },
+    {
+      "path": "backend/tests/test_security_audit.py",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "888163ac288e1d4267d1fc159afefbf873e5d9d479c580f6a07bbf46947eefd4"
+    },
+    {
+      "path": "backend/tests/test_security_storage_integration.py",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "86d93014774b49da042852cb3db27fe463230631d647b19596c0c1c3ff2f5bb8"
+    },
+    {
+      "path": "backend/tools/chaos_demo.py",
+      "status": "modified",
+      "before_sha256": "37a598febd85791b6eb60099ec784e2622b94ca1580f51ca8346ee7bf929fb2d",
+      "after_sha256": "2280fab1dce2141e39f5467b8504baccf06a78701d366219ae589f4038bad9e8"
+    },
+    {
+      "path": "backend/tools/security_audit.py",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "48ce2049cfe6b06b4ba04ba5c12ef111afaa3d61e93fd1f407025d66f9f1f32b"
+    },
+    {
+      "path": "backend/tools/security_load.py",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "4211d09bdb282002061bbc3fa9320273728a7517f896702c88566d34548c3760"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "status": "modified",
+      "before_sha256": "06167b3c4215e715e43c514d742de0fbe178061a1cd52564f7a7bc0c2445b67d",
+      "after_sha256": "aabaa68283dc90308c08441165316a69ff69e2cc7a640295784f6d2213711bd5"
+    },
+    {
+      "path": "docs/BACKLOG.md",
+      "status": "modified",
+      "before_sha256": "7a119e3b02a49e6ce4d0c0e12268b68ab7c225b3c09c364fb9693b9248501ea2",
+      "after_sha256": "f3ecab23f1bff815193c285180eeb77257f0afb5d9346fb9e9a743ab0d5017a6"
+    },
+    {
+      "path": "docs/CHAOS_EVAL_RESULTS.json",
+      "status": "modified",
+      "before_sha256": "dfb1159a4940ec5e2d8bee11c726f66534622052896593d3621599efda6d7365",
+      "after_sha256": "82849d4d562deff366e558df3eadcc5ca702354936c5ec5b03a4d8332ce043ae"
+    },
+    {
+      "path": "docs/CI_GATES.md",
+      "status": "modified",
+      "before_sha256": "19922254694aefc6b1ae795221bd9f64d0cfb302508f0fe8eed1aa71c17bc7af",
+      "after_sha256": "0145947126009bbe9e6b76341ff17f8b1636f79ec6aa17947e20ca3f8d9b4bd1"
+    },
+    {
+      "path": "docs/EVALUATION_REPORT.md",
+      "status": "modified",
+      "before_sha256": "ebd85649d5f50734e5ef8c25f300acab9447b5a9a1ef86e90312c23013c237e6",
+      "after_sha256": "d51fde30dd9964024e5c4fe0bc733ea9729eafbc5fc63abc1a4f45342b694843"
+    },
+    {
+      "path": "docs/REQUIREMENTS_TRACEABILITY.md",
+      "status": "modified",
+      "before_sha256": "54ec2aba3cc3981791ad459b9a14c8772be1366df484c47e04016ce1772d38d6",
+      "after_sha256": "80584ea274a8eb919e8a093508073f76fac41c5211e8719068281a0e4cd25a06"
+    },
+    {
+      "path": "docs/SECURITY_AUDIT.md",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "f131e343d65fadde193cfad606b116792ab7fd38a3e19c459f4df4c3cb1112c8"
+    },
+    {
+      "path": "docs/SECURITY_STAGE_FILES.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": null
+    },
+    {
+      "path": "docs/SECURITY_STAGE_RESULTS.md",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "e969e1ba4bc1dac4c55ab9a66142e415144c2017d7b0eba627d93e7d50d11462"
+    },
+    {
+      "path": "docs/adr/0015-bounded-ingress-queues-and-research-connections.md",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "d294bc8c1efef8f1f025ab667b3bd9ff7b6449c7f15375c945a2e0f82216b369"
+    },
+    {
+      "path": "docs/openapi.json",
+      "status": "modified",
+      "before_sha256": "859332ff0b4db9877d1fd2e75c494bbc9d3dc6220ef4313fb67d570109ce1d6e",
+      "after_sha256": "08fb63bbb3a08fc541c47dcfa3c3a9070fcaf88839ea9a701fab13f4555d08b4"
+    },
+    {
+      "path": "docs/security/chaos-regression.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "33340f199fc533300d47bbbf7f74e5f4c4c0a450da55ec0cdd1ccd69182f17cf"
+    },
+    {
+      "path": "docs/security/dependency-audit.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "68f1e384d6957cd61cc1db0b0efd869f1266a501e3818f3e016fe2b17c6feaf0"
+    },
+    {
+      "path": "docs/security/final-api.xml",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "609db1f7c56a7fb1c9eca24875d317b89f8ea2e998a0e32b3aed7745c56954dc"
+    },
+    {
+      "path": "docs/security/golden-baseline-r3.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "fbddc34fa8c7aca9491aab90ff013efa7ea43d227d03bf06040422f9ee9a8e32"
+    },
+    {
+      "path": "docs/security/golden-baseline-r3.traces.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "39cb9f1161397f774e79a05a8c2b5c5554a7d49281f01aa659a0782970686a55"
+    },
+    {
+      "path": "docs/security/golden-regression.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "11cb05209e40e69e9619299c0355741f07521f470e244f8383cb232f67510b11"
+    },
+    {
+      "path": "docs/security/golden-regression.traces.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "f294cb155be7627483b7f658d6cbd044c9a1b46b489d4b6333c0aa7faf248907"
+    },
+    {
+      "path": "docs/security/integration-initial.xml",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "85733c87e07959b7dc4ab1bf6ff911b8455e1f4c9bfc74f26e2440262bd22276"
+    },
+    {
+      "path": "docs/security/integration.xml",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "a5c84867c6bf057ad210b765045be83c649182f7c6ca9b5e869619a7f670fbf0"
+    },
+    {
+      "path": "docs/security/load-results.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "36a8bc05525fea4f6d637fdd49bb54ab1f906b9d30653104db39d830bc5e9259"
+    },
+    {
+      "path": "docs/security/security-focused.xml",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "4b6a1f2e75fd9a7fc7c75d9e59f6ab62a5cb31dbcd764d537f6cbb01de99c183"
+    },
+    {
+      "path": "docs/security/source-scan.json",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "b91b867b89c51f7599e4b1b65b29b7bd7047a462f5b754b51aa097f39cbddab2"
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "status": "modified",
+      "before_sha256": "1e84cde60a5d47b97ae6e81e76541b660e169e0b1532a195fbb9f443e50d8562",
+      "after_sha256": "71da604a124c54d1266cfe1800672a3b18f649daf1aeda4ca3f895e7f16cf5ea"
+    },
+    {
+      "path": "frontend/src/app/api/briefs/route.ts",
+      "status": "modified",
+      "before_sha256": "01ca37e06dd0c88d3caed0a9d5ab944facea8693ba6d57731618791dccb08f06",
+      "after_sha256": "05625b151501d277bb213d4ee81bf265a0365a2f97fb78f0589d0ad2da9d80ed"
+    },
+    {
+      "path": "frontend/src/app/api/session/route.ts",
+      "status": "modified",
+      "before_sha256": "7aa275f0d9f208e50ab7b1f144b1e1734fe13810389119989e4c06b00b76eb26",
+      "after_sha256": "bfab539f622bc0f3b844a899d7fb6a0e71fe2dc1ea832e82952a2767da259856"
+    },
+    {
+      "path": "frontend/src/lib/ingress.ts",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "c360617c5aa8f86bd57fa0b0c3ca4d30352cdc1405f2b9f0b01c500f09832d56"
+    },
+    {
+      "path": "frontend/src/lib/proxy.ts",
+      "status": "modified",
+      "before_sha256": "0ca70e132b18e38b1cd177420aa473e15915db48687f261c4e2622b5129d85cd",
+      "after_sha256": "6199b3bb2bbe45973aad21acd01852babd50ed4a034e09c3e3768596318a5391"
+    },
+    {
+      "path": "frontend/src/lib/server-api.ts",
+      "status": "modified",
+      "before_sha256": "522d71541ba3a9524d6e63fc204ccb2bccdf84e1e5d590f20ccfb4755a7e5925",
+      "after_sha256": "c366aa900b2a9702e71b992fe37fb8c7f5d43b80bd0dae493ea312b20d3ef00c"
+    },
+    {
+      "path": "frontend/tests/e2e/chaos.spec.ts",
+      "status": "modified",
+      "before_sha256": "be1e164e0c18405efbcaef671e58c7c7bed997868b71e1dd5a8577a62133a23d",
+      "after_sha256": "1b9c07860c539b188f939f85c2b8afa88973193e14e6fff27abad8fd7e99c706"
+    },
+    {
+      "path": "frontend/tests/e2e/security.spec.ts",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "f55e9faf42af153f55acd3c326fd09f7ab28688e61c01437488b25d9e97582fe"
+    },
+    {
+      "path": "frontend/tests/security.test.ts",
+      "status": "added",
+      "before_sha256": null,
+      "after_sha256": "75cb10d37c6669f9d95b5f72db817650f764c9d90a2bd12baddcc7b35ab36278"
+    }
+  ]
+}

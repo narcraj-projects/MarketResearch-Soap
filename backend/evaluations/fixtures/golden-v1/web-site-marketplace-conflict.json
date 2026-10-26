@@ -1,0 +1,189 @@
+{
+  "label": "DEMO",
+  "schema_version": "research-1.0",
+  "dataset_version": "research-demo-v1",
+  "origin": "Synthetic parallel DEMO recording, not live research.",
+  "dns": {
+    "demo-a.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "demo-b.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "demo-c.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "api.tavily.com": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "marketplace.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ]
+  },
+  "responses": {
+    "GET https://demo-a.invalid/robots.txt": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "User-agent: *\nAllow: /",
+          "content_type": "text/plain"
+        },
+        "query": null
+      }
+    ],
+    "GET https://demo-a.invalid/soap": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "<!doctype html><html><head><title>DEMO public listing</title><script type=\"application/ld+json\">{\"@type\": \"Product\", \"name\": \"DEMO A soap bar\", \"sku\": \"DEMO-A-100\", \"brand\": {\"name\": \"DEMO Maker A\"}, \"model\": \"DEMO original\", \"category\": \"Handmade soap\", \"description\": \"DEMO marketing says this bar helps skin. This is not established efficacy.\", \"numberOfItems\": 1, \"weight\": {\"@type\": \"QuantitativeValue\", \"value\": \"100\", \"unitCode\": \"GRM\"}, \"additionalProperty\": [{\"name\": \"Weight basis\", \"value\": \"total_pack\"}, {\"name\": \"Ingredients\", \"value\": \"DEMO olive oil, water\"}, {\"name\": \"Channels\", \"value\": \"Own online shop\"}, {\"name\": \"Packaging\", \"value\": \"DEMO recyclable packaging claim\"}, {\"name\": \"Positioning\", \"value\": \"DEMO ingredient-led\"}], \"audience\": {\"@type\": \"Audience\", \"audienceType\": \"DEMO sensitive-skin shoppers\"}, \"review\": {\"@type\": \"Review\", \"reviewBody\": \"DEMO public reviewer liked the scent; sample is not representative.\"}, \"offers\": {\"@type\": \"Offer\", \"price\": \"120\", \"priceCurrency\": \"INR\"}}</script></head><body><h1>DEMO public listing</h1></body></html>",
+          "content_type": "text/html"
+        },
+        "query": null
+      }
+    ],
+    "POST https://api.tavily.com/search c866c0727a3dc579fd517871aef09f574ff42ace5ad3cc4f2351685645d9f354": [
+      {
+        "query": {
+          "query": "DEMO Maker A soap product launches announcements",
+          "topic": "news",
+          "search_depth": "basic",
+          "max_results": 3,
+          "include_answer": false,
+          "include_raw_content": false,
+          "include_images": false,
+          "auto_parameters": false,
+          "include_usage": true
+        },
+        "reply": {
+          "status": 200,
+          "content_type": "application/json",
+          "body": "{\"query\": \"DEMO Maker A soap product launches announcements\", \"results\": [{\"url\": \"https://marketplace.invalid/demo-a/soap\", \"title\": \"DEMO marketplace listing\", \"content\": \"DEMO Maker A lists DEMO-A-100 at 140 INR for the same 100 g item.\"}]}"
+        }
+      }
+    ],
+    "GET https://demo-b.invalid/robots.txt": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "User-agent: *\nAllow: /",
+          "content_type": "text/plain"
+        },
+        "query": null
+      }
+    ],
+    "GET https://demo-b.invalid/soap": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "<!doctype html><html><head><title>DEMO public listing</title><script type=\"application/ld+json\">{\"@type\": \"Product\", \"name\": \"DEMO B soap bar\", \"brand\": {\"name\": \"DEMO Maker B\"}, \"model\": \"DEMO original\", \"category\": \"Handmade soap\", \"description\": \"DEMO marketing says this bar helps skin. This is not established efficacy.\", \"numberOfItems\": 3, \"weight\": {\"@type\": \"QuantitativeValue\", \"value\": \"100\", \"unitCode\": \"GRM\"}, \"additionalProperty\": [{\"name\": \"Ingredients\", \"value\": \"DEMO olive oil, water\"}, {\"name\": \"Channels\", \"value\": \"Own online shop\"}, {\"name\": \"Packaging\", \"value\": \"DEMO recyclable packaging claim\"}, {\"name\": \"Positioning\", \"value\": \"DEMO ingredient-led\"}], \"audience\": {\"@type\": \"Audience\", \"audienceType\": \"DEMO sensitive-skin shoppers\"}, \"review\": {\"@type\": \"Review\", \"reviewBody\": \"DEMO public reviewer liked the scent; sample is not representative.\"}, \"offers\": {\"@type\": \"Offer\", \"price\": \"120\", \"priceCurrency\": \"INR\"}}</script></head><body><h1>DEMO public listing</h1></body></html>",
+          "content_type": "text/html"
+        },
+        "query": null
+      }
+    ],
+    "POST https://api.tavily.com/search d83a3823f54b40d9e56d196a316efa1f12732e71b5b2be598acd1c3edaf75693": [
+      {
+        "query": {
+          "query": "DEMO Maker B soap product launches announcements",
+          "topic": "news",
+          "search_depth": "basic",
+          "max_results": 3,
+          "include_answer": false,
+          "include_raw_content": false,
+          "include_images": false,
+          "auto_parameters": false,
+          "include_usage": true
+        },
+        "reply": {
+          "status": 200,
+          "content_type": "application/json",
+          "body": "{\"query\": \"DEMO Maker B soap product launches announcements\", \"results\": []}"
+        }
+      }
+    ],
+    "GET https://demo-c.invalid/robots.txt": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "User-agent: *\nAllow: /",
+          "content_type": "text/plain"
+        },
+        "query": null
+      }
+    ],
+    "GET https://demo-c.invalid/soap": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "<!doctype html><html><head><title>DEMO public listing</title><script type=\"application/ld+json\">{\"@type\": \"Product\", \"name\": \"DEMO C soap bar\", \"sku\": \"DEMO-C-100\", \"brand\": {\"name\": \"DEMO Maker C\"}, \"model\": \"DEMO original\", \"category\": \"Handmade soap\", \"description\": \"DEMO marketing says this bar helps skin. This is not established efficacy.\", \"numberOfItems\": 1, \"weight\": {\"@type\": \"QuantitativeValue\", \"value\": \"100\", \"unitCode\": \"GRM\"}, \"additionalProperty\": [{\"name\": \"Weight basis\", \"value\": \"total_pack\"}, {\"name\": \"Ingredients\", \"value\": \"DEMO olive oil, water\"}, {\"name\": \"Channels\", \"value\": \"Own online shop\"}, {\"name\": \"Packaging\", \"value\": \"DEMO recyclable packaging claim\"}, {\"name\": \"Positioning\", \"value\": \"DEMO ingredient-led\"}], \"audience\": {\"@type\": \"Audience\", \"audienceType\": \"DEMO sensitive-skin shoppers\"}, \"review\": {\"@type\": \"Review\", \"reviewBody\": \"DEMO public reviewer liked the scent; sample is not representative.\"}, \"offers\": {\"@type\": \"Offer\", \"price\": \"120\", \"priceCurrency\": \"INR\"}}</script></head><body><h1>DEMO public listing</h1></body></html>",
+          "content_type": "text/html"
+        },
+        "query": null
+      }
+    ],
+    "POST https://api.tavily.com/search c4ee0ff6686106b0f975fcce23903d5c5c0dac188cfebc966099f3fe4a93ab48": [
+      {
+        "query": {
+          "query": "DEMO Maker C soap product launches announcements",
+          "topic": "news",
+          "search_depth": "basic",
+          "max_results": 3,
+          "include_answer": false,
+          "include_raw_content": false,
+          "include_images": false,
+          "auto_parameters": false,
+          "include_usage": true
+        },
+        "reply": {
+          "status": 200,
+          "content_type": "application/json",
+          "body": "{\"query\": \"DEMO Maker C soap product launches announcements\", \"results\": []}"
+        }
+      }
+    ],
+    "GET https://marketplace.invalid/robots.txt": [
+      {
+        "reply": {
+          "status": 404
+        }
+      }
+    ],
+    "GET https://marketplace.invalid/demo-a/soap": [
+      {
+        "reply": {
+          "status": 200,
+          "content_type": "text/html",
+          "body": "<!doctype html><html><head><title>DEMO golden listing</title><script type=\"application/ld+json\">{\"@type\": \"Product\", \"name\": \"DEMO A soap bar\", \"sku\": \"DEMO-A-100\", \"brand\": {\"name\": \"DEMO Maker A\"}, \"model\": \"DEMO original\", \"category\": \"Handmade soap\", \"description\": \"DEMO marketing says this bar helps skin. This is not established efficacy.\", \"numberOfItems\": 1, \"weight\": {\"@type\": \"QuantitativeValue\", \"value\": \"100\", \"unitCode\": \"GRM\"}, \"additionalProperty\": [{\"name\": \"Weight basis\", \"value\": \"total_pack\"}, {\"name\": \"Ingredients\", \"value\": \"DEMO olive oil, water\"}, {\"name\": \"Channels\", \"value\": \"Own online shop\"}, {\"name\": \"Packaging\", \"value\": \"DEMO recyclable packaging claim\"}, {\"name\": \"Positioning\", \"value\": \"DEMO ingredient-led\"}], \"audience\": {\"@type\": \"Audience\", \"audienceType\": \"DEMO sensitive-skin shoppers\"}, \"review\": {\"@type\": \"Review\", \"reviewBody\": \"DEMO public reviewer liked the scent; sample is not representative.\"}, \"offers\": {\"@type\": \"Offer\", \"price\": \"140\", \"priceCurrency\": \"INR\"}}</script></head><body>DEMO synthetic golden evidence</body></html>"
+        }
+      }
+    ]
+  },
+  "competitors": [
+    {
+      "name": "DEMO Maker A",
+      "url": "https://demo-a.invalid/soap"
+    },
+    {
+      "name": "DEMO Maker B",
+      "url": "https://demo-b.invalid/soap"
+    },
+    {
+      "name": "DEMO Maker C",
+      "url": "https://demo-c.invalid/soap"
+    }
+  ],
+  "case_id": "R21-parallel",
+  "expected": {
+    "products": 3
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "label": "DEMO",
+  "dataset_version": "scout-demo-v1",
+  "tools_version": "tavily-search-1.0",
+  "scorer_version": "soap-scout-1.0",
+  "case_id": "DEMO-empty_results",
+  "origin": "Synthetic recorded Tavily-compatible responses; not captured live and not competitor research.",
+  "brief": {
+    "category": "Handmade cold-process soap",
+    "geography": "India",
+    "customer": "sensitive skin",
+    "objective": "DEMO identify relevant makers",
+    "known_competitors": [
+      "DEMO Ghost"
+    ],
+    "preferences": {
+      "price_segment": "Mid-premium"
+    }
+  },
+  "steps": [
+    {
+      "request": {
+        "query": "Handmade cold-process soap makers India sensitive skin official brand",
+        "max_results": 10,
+        "search_depth": "basic",
+        "topic": "general",
+        "include_answer": false,
+        "include_raw_content": false,
+        "include_images": false,
+        "auto_parameters": false,
+        "include_usage": true
+      },
+      "status": 200,
+      "response": {
+        "query": "Handmade cold-process soap makers India sensitive skin official brand",
+        "results": []
+      }
+    },
+    {
+      "request": {
+        "query": "Handmade cold-process soap artisan manufacturers India own website",
+        "max_results": 10,
+        "search_depth": "basic",
+        "topic": "general",
+        "include_answer": false,
+        "include_raw_content": false,
+        "include_images": false,
+        "auto_parameters": false,
+        "include_usage": true
+      },
+      "status": 200,
+      "response": {
+        "query": "Handmade cold-process soap artisan manufacturers India own website",
+        "results": []
+      }
+    }
+  ],
+  "expected": {
+    "candidates": 0,
+    "dispatches": 2,
+    "stop_reason": null
+  }
+}

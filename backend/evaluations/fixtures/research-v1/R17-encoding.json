@@ -1,0 +1,54 @@
+{
+  "label": "DEMO",
+  "schema_version": "research-1.0",
+  "dataset_version": "research-demo-v1",
+  "origin": "Synthetic public HTML/news/DNS recordings; no real competitor or network capture.",
+  "competitor": {
+    "name": "DEMO Maker A",
+    "url": "https://demo-a.invalid/soap"
+  },
+  "dns": {
+    "demo-a.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "news.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "api.tavily.com": [
+      [
+        "93.184.216.34"
+      ]
+    ]
+  },
+  "responses": {
+    "GET https://demo-a.invalid/robots.txt": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "User-agent: *\nAllow: /\n",
+          "content_type": "text/plain"
+        },
+        "query": null
+      }
+    ],
+    "GET https://demo-a.invalid/soap": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "DEMO compressed",
+          "content_type": "text/html",
+          "encoding": "unsupported"
+        },
+        "query": null
+      }
+    ]
+  },
+  "expected": {
+    "products": 0
+  },
+  "case_id": "R17-encoding"
+}

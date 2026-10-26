@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+out/
+coverage/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+*.tsbuildinfo
+.cache/
+dist/
+supabase/.temp/
+supabase/.branches/
+frontend/test-results/
+frontend/playwright-report/
+# Private project inputs: preserve locally, exclude from source submission.
+docs/Available credits/
+docs/Project handout/
+docs/ui-screenshots/
+docs/*PRD*
+docs/*.docx
+docs/Soap Market Research Agent — UI.html
+# Audio/video are delivered directly to the user, not uploaded to GitHub.
+submission/*.mp4
+submission/*.webm
+submission/*.wav
+submission/*.mp3

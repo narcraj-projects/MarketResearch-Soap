@@ -1,0 +1,18 @@
+﻿{
+    "version":  1,
+    "recorded_date":  "2026-10-25",
+    "sources":  [
+                    {
+                        "path":  "docs/Agentic_Market_Research_Agent_BRD_Handmade_Soap.docx",
+                        "sha256":  "a5d2dc63c6fffeb10328026abc81530a155a2ae4ed32940aeff23ba2f44c1c73"
+                    },
+                    {
+                        "path":  "docs/Lather_Lens_PRD_v1.1.md",
+                        "sha256":  "4e955efb98b5ac32270a8a74309ea98d384ff05259635f552f52e1b9ae97401a"
+                    },
+                    {
+                        "path":  "docs/Soap Market Research Agent — UI.html",
+                        "sha256":  "c704711600060be0e0bba2b2b55499d0b022b312187c5c6faeb2f79d906a140d"
+                    }
+                ]
+}

@@ -1,0 +1,61 @@
+{
+  "label": "DEMO",
+  "schema_version": "chaos-1.0",
+  "dataset_version": "chaos-demo-v1",
+  "scenarios": [
+    {
+      "scenario": "timeout",
+      "title": "Search timeout",
+      "search": "search-timeout.json",
+      "web": "web-clean.json"
+    },
+    {
+      "scenario": "rate_limit",
+      "title": "Search 429",
+      "search": "search-rate_limit.json",
+      "web": "web-clean.json"
+    },
+    {
+      "scenario": "empty_results",
+      "title": "Empty results",
+      "search": "search-empty_results.json",
+      "web": "web-clean.json"
+    },
+    {
+      "scenario": "inaccessible_page",
+      "title": "Inaccessible page",
+      "search": "search-clean.json",
+      "web": "web-inaccessible_page.json"
+    },
+    {
+      "scenario": "conflicting_price",
+      "title": "Conflicting price",
+      "search": "search-clean.json",
+      "web": "web-conflicting_price.json"
+    },
+    {
+      "scenario": "missing_weight",
+      "title": "Missing weight",
+      "search": "search-clean.json",
+      "web": "web-missing_weight.json"
+    },
+    {
+      "scenario": "malformed_json",
+      "title": "Malformed JSON",
+      "search": "search-clean.json",
+      "web": "web-clean.json"
+    },
+    {
+      "scenario": "reviewer_rejection",
+      "title": "Reviewer rejection",
+      "search": "search-clean.json",
+      "web": "web-clean.json"
+    },
+    {
+      "scenario": "interrupted_worker",
+      "title": "Interrupted worker",
+      "search": "search-clean.json",
+      "web": "web-clean.json"
+    }
+  ]
+}

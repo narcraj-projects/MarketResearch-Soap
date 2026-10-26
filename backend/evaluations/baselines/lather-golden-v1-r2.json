@@ -1,0 +1,823 @@
+{
+  "schema_version": "baseline-1.0",
+  "label": "DEMO",
+  "dataset_version": "lather-golden-v1",
+  "manifest_hash": "6f60321ef33c7faa8019b09fcc00866427e9d007282b2e38ed3bc82e40ead14a",
+  "grader_version": "graders-1.0",
+  "execution_versions": {
+    "graph": "workflow-1.2",
+    "search": "tavily-search-1.0",
+    "scorer": "soap-scout-1.0",
+    "public_research": "public-research-1.0",
+    "langsmith_sdk": "0.14.12",
+    "model_tools": "model-replay-1.0",
+    "provider": "none",
+    "model": "none",
+    "prompt": "DEMO-frozen-analysis-1.0",
+    "implementation_sha256": "dc166f494dc246a27b5b5a8ae6a892a3baee9d51c031f309a14e48f43f791d6b"
+  },
+  "review_status": "pending_user_review",
+  "cases": {
+    "D01": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D01": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:31:59.381218Z",
+        "ended_at": "2026-10-25T16:32:03.811479Z",
+        "latency_ms": 4430,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D02": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D02": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 2,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 2,
+        "attempts_by_tool": {
+          "public.news": 2,
+          "public.retrieve": 4,
+          "public.search": 2
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:03.967510Z",
+        "ended_at": "2026-10-25T16:32:08.291996Z",
+        "latency_ms": 4324,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 8,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D03": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "D03": true
+      },
+      "signature": {
+        "status": "partial",
+        "competitors": 0,
+        "nodes": [
+          "validate",
+          "discover"
+        ],
+        "reports": 0,
+        "tasks": 0,
+        "attempts_by_tool": {
+          "public.search": 2
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:08.384330Z",
+        "ended_at": "2026-10-25T16:32:09.366040Z",
+        "latency_ms": 982,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 2,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D04": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D04": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 5,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:09.385699Z",
+        "ended_at": "2026-10-25T16:32:13.103540Z",
+        "latency_ms": 3718,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 12,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": [
+          0.5,
+          1.0
+        ]
+      }
+    },
+    "D05": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "D05": true
+      },
+      "signature": {
+        "subcases": [
+          {
+            "dispatches": 2,
+            "stop": null,
+            "sources": 3,
+            "delays": [
+              2.0
+            ],
+            "retry_after": 2.0,
+            "completed_attempts": 2
+          },
+          {
+            "dispatches": 1,
+            "stop": "deadline",
+            "sources": 0,
+            "delays": [],
+            "retry_after": 999999.0,
+            "completed_attempts": 1
+          }
+        ]
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:13.173265Z",
+        "ended_at": "2026-10-25T16:32:13.185702Z",
+        "latency_ms": 12,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 3,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D06": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D06": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:13.185956Z",
+        "ended_at": "2026-10-25T16:32:16.647000Z",
+        "latency_ms": 3461,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D07": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D07": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 8,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:16.713599Z",
+        "ended_at": "2026-10-25T16:32:20.663755Z",
+        "latency_ms": 3950,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 12,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D08": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D08": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:20.747173Z",
+        "ended_at": "2026-10-25T16:32:24.453275Z",
+        "latency_ms": 3706,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D09": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D09": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:24.529470Z",
+        "ended_at": "2026-10-25T16:32:28.095799Z",
+        "latency_ms": 3566,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D10": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "D10": true
+      },
+      "signature": {
+        "status": "partial",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize"
+        ],
+        "reports": 0,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "model.generate": 2,
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 2,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:28.173717Z",
+        "ended_at": "2026-10-25T16:32:30.904866Z",
+        "latency_ms": 2731,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 12,
+        "reserved_calls": 0,
+        "model_replay_attempts": 2,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D11": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D11": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:30.920304Z",
+        "ended_at": "2026-10-25T16:32:34.487168Z",
+        "latency_ms": 3567,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D12": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D12": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review",
+          "revise",
+          "analyze",
+          "review"
+        ],
+        "reports": 2,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "model.generate": 1,
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 1
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:34.571347Z",
+        "ended_at": "2026-10-25T16:32:38.891513Z",
+        "latency_ms": 4320,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 11,
+        "reserved_calls": 0,
+        "model_replay_attempts": 1,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D13": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D13": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:38.946877Z",
+        "ended_at": "2026-10-25T16:32:54.660416Z",
+        "latency_ms": 15714,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D14": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "D14": true
+      },
+      "signature": {
+        "status": "report_review",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:54.767670Z",
+        "ended_at": "2026-10-25T16:32:58.184357Z",
+        "latency_ms": 3417,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D15": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "D15": true
+      },
+      "signature": {
+        "price_counts": {
+          "new": 0,
+          "changed": 1,
+          "gone": 0,
+          "unchanged": 40,
+          "unknown": 1,
+          "stale": 0
+        },
+        "gap_counts": {
+          "new": 0,
+          "changed": 0,
+          "gone": 0,
+          "unchanged": 27,
+          "unknown": 27,
+          "stale": 0
+        }
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:58.199757Z",
+        "ended_at": "2026-10-25T16:32:58.423072Z",
+        "latency_ms": 223,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 0,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D16": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "D16": true
+      },
+      "signature": {
+        "status": "cancelled",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.retrieve": 2,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:32:58.424108Z",
+        "ended_at": "2026-10-25T16:33:00.724268Z",
+        "latency_ms": 2300,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 3,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    },
+    "D17": {
+      "passed": true,
+      "grades": {
+        "schema": true,
+        "permissions": true,
+        "tool_arguments": true,
+        "trajectory": true,
+        "no_invented_competitors": true,
+        "math": true,
+        "D17": true
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "measurement": {
+        "started_at": "2026-10-25T16:33:00.748880Z",
+        "ended_at": "2026-10-25T16:33:04.316789Z",
+        "latency_ms": 3568,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      }
+    }
+  }
+}

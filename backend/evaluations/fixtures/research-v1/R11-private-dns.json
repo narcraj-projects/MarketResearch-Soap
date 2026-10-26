@@ -1,0 +1,34 @@
+{
+  "label": "DEMO",
+  "schema_version": "research-1.0",
+  "dataset_version": "research-demo-v1",
+  "origin": "Synthetic public HTML/news/DNS recordings; no real competitor or network capture.",
+  "competitor": {
+    "name": "DEMO Maker A",
+    "url": "https://demo-a.invalid/soap"
+  },
+  "dns": {
+    "demo-a.invalid": [
+      [
+        "93.184.216.34",
+        "10.0.0.1"
+      ]
+    ],
+    "news.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "api.tavily.com": [
+      [
+        "93.184.216.34"
+      ]
+    ]
+  },
+  "responses": {},
+  "expected": {
+    "products": 0,
+    "page_requests": 0
+  },
+  "case_id": "R11-private-dns"
+}

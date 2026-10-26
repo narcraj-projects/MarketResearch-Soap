@@ -1,0 +1,9 @@
+# Hash-pinned inputs and baselines must keep their recorded bytes on every OS.
+backend/evaluations/fixtures/** -text
+backend/evaluations/baselines/** -text
+backend/tests/history_support.py -text
+backend/tests/analysis_support.py -text
+docs/Lather_Lens_PRD_v1.1.md -text
+docs/*.html -text
+*.docx binary
+*.png binary

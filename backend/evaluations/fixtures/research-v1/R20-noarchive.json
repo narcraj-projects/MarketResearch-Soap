@@ -1,0 +1,55 @@
+{
+  "label": "DEMO",
+  "schema_version": "research-1.0",
+  "dataset_version": "research-demo-v1",
+  "origin": "Synthetic public HTML/news/DNS recordings; no real competitor or network capture.",
+  "competitor": {
+    "name": "DEMO Maker A",
+    "url": "https://demo-a.invalid/soap"
+  },
+  "dns": {
+    "demo-a.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "news.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "api.tavily.com": [
+      [
+        "93.184.216.34"
+      ]
+    ]
+  },
+  "responses": {
+    "GET https://demo-a.invalid/robots.txt": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "User-agent: *\nAllow: /\n",
+          "content_type": "text/plain"
+        },
+        "query": null
+      }
+    ],
+    "GET https://demo-a.invalid/soap": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "<!doctype html><html><head><title>DEMO public listing</title><script type=\"application/ld+json\">{\"@type\": \"Product\", \"name\": \"DEMO A soap bar\", \"sku\": \"DEMO-A-100\", \"brand\": {\"name\": \"DEMO Maker A\"}, \"model\": \"DEMO original\", \"category\": \"Handmade soap\", \"description\": \"DEMO marketing says this bar helps skin. This is not established efficacy.\", \"numberOfItems\": 1, \"weight\": {\"@type\": \"QuantitativeValue\", \"value\": \"100\", \"unitCode\": \"GRM\"}, \"additionalProperty\": [{\"name\": \"Weight basis\", \"value\": \"total_pack\"}, {\"name\": \"Ingredients\", \"value\": \"DEMO olive oil, water\"}, {\"name\": \"Channels\", \"value\": \"Own online shop\"}, {\"name\": \"Packaging\", \"value\": \"DEMO recyclable packaging claim\"}, {\"name\": \"Positioning\", \"value\": \"DEMO ingredient-led\"}], \"audience\": {\"@type\": \"Audience\", \"audienceType\": \"DEMO sensitive-skin shoppers\"}, \"review\": {\"@type\": \"Review\", \"reviewBody\": \"DEMO public reviewer liked the scent; sample is not representative.\"}, \"offers\": {\"@type\": \"Offer\", \"price\": \"120\", \"priceCurrency\": \"INR\"}}</script></head><body><h1>DEMO public listing</h1></body></html>",
+          "content_type": "text/html",
+          "robots_tag": "nosnippet"
+        },
+        "query": null
+      }
+    ]
+  },
+  "expected": {
+    "products": 0,
+    "denied": true
+  },
+  "case_id": "R20-noarchive"
+}

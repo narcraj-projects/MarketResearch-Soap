@@ -1,0 +1,18 @@
+{
+  "label": "DEMO",
+  "schema_version": "model-fixtures-1.0",
+  "origin": "Synthetic frozen-rule-baseline response projections; no provider/model invocation or model-quality measurement.",
+  "malformed_json": [
+    {
+      "raw": "{DEMO malformed JSON"
+    },
+    {
+      "template": "frozen_analysis"
+    }
+  ],
+  "reviewer_rejection": [
+    {
+      "template": "wrong_unit_price"
+    }
+  ]
+}

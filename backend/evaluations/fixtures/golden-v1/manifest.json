@@ -1,0 +1,30 @@
+{
+  "label": "DEMO",
+  "dataset_version": "lather-golden-v1",
+  "references": {
+    "backend/evaluations/fixtures/scout-v1/SC01-clean.json": "0200f1d0378b8e478f3703474e7ce90aca88e90ddbc27b51336ac2d57c3bb638",
+    "backend/evaluations/fixtures/scout-v1/SC02-fewer.json": "2624f575343c8b8bb0965871fbb7922708a9afbaa23f4011848d611b915959c6",
+    "backend/evaluations/fixtures/scout-v1/SC04-irrelevant.json": "fea2a5ea07e039ae71a595a039c37d247f54362a023490893b7a5466a99e2fbc",
+    "backend/evaluations/fixtures/scout-v1/SC06-rate-limit.json": "b194de22e3c33981365c64231f7fb48acc55bbf252b28016af02310df1d5fb09",
+    "backend/evaluations/fixtures/scout-v1/SC14-retry-deadline.json": "6b6f6edfd4bdf6c6dbda2d9f50e0ece967a8c17eb15e7acb35e30c767e28606f",
+    "backend/evaluations/fixtures/research-v1/R21-parallel.json": "ddaa944d454a18e7b59fe05828f17cd4ab3ccae7a914deea8c49d0186b881c43",
+    "backend/tests/history_support.py": "149a9128e7e6065b73a32371bd820dcd95d998f3c0e73ce26868b3dfa97ed3fe",
+    "backend/tests/analysis_support.py": "6120f80bfdd360167ad30a5194187244e7b481d8e9843ac7c8fe9f6046becd97"
+  },
+  "sha256": {
+    "cases.json": "eadcede7cbf4be138ebcc92cec35d3ce23e287b164ffaae3555119923a80ae4f",
+    "model-scripts.json": "336da964ab175936f3afb8f5a880f30310f96171848eccc5cb8cbd70560146b6",
+    "search-429.json": "b194de22e3c33981365c64231f7fb48acc55bbf252b28016af02310df1d5fb09",
+    "search-clean.json": "0200f1d0378b8e478f3703474e7ce90aca88e90ddbc27b51336ac2d57c3bb638",
+    "search-deadline.json": "6b6f6edfd4bdf6c6dbda2d9f50e0ece967a8c17eb15e7acb35e30c767e28606f",
+    "search-fewer.json": "2624f575343c8b8bb0965871fbb7922708a9afbaa23f4011848d611b915959c6",
+    "search-irrelevant.json": "fea2a5ea07e039ae71a595a039c37d247f54362a023490893b7a5466a99e2fbc",
+    "web-clean.json": "ddaa944d454a18e7b59fe05828f17cd4ab3ccae7a914deea8c49d0186b881c43",
+    "web-denied-b.json": "ba12f247057e93c1f77fb7fb2503ab6e5dc8f358726ee44ff493910aab7ca449",
+    "web-medical-claim.json": "ddaee25df35848ede219ec66c9bfae4753b49e96029a9a456f1811979ad55ca4",
+    "web-missing-fields.json": "ddec9896534d4d7abef1c6a51cdd3e7df7f00e98392d7725635228d1696914f7",
+    "web-pack-mismatch.json": "c676629c89d48fd955a5e7886d1377ddb59839a0ef7bdd54346c284ddd2caa3c",
+    "web-site-marketplace-conflict.json": "aafb14db8fb3baef28ba6666df349ded74ff3bc31f68048199dd78a3731c8cbf",
+    "web-terminal-news-timeout.json": "e6b1adc3d8c5065597fae1723ccab723cd35b782855093bcb69de8a1ab327613"
+  }
+}

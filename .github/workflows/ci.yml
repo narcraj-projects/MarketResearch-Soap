@@ -1,0 +1,117 @@
+name: Scaffold checks
+on: [push, pull_request]
+permissions:
+  contents: read
+env:
+  NEXT_TELEMETRY_DISABLED: '1'
+  PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
+  LANGSMITH_TRACING: 'false'
+  LANGCHAIN_TRACING_V2: 'false'
+  LANGGRAPH_STRICT_MSGPACK: 'true'
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.11.0'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.7.20'
+          enable-cache: false
+      - run: make install
+      - run: make check
+  local-auth-storage:
+    runs-on: ubuntu-latest
+    env:
+      DO_NOT_TRACK: '1'
+      SUPABASE_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.11.0'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.7.20'
+          enable-cache: false
+      - run: uv sync --project backend --frozen --extra test --python 3.13
+      - shell: pwsh
+        run: ./scripts/local-auth.ps1 -Action start
+      - shell: pwsh
+        run: ./scripts/local-auth.ps1 -Action prepare
+      - shell: pwsh
+        run: ./scripts/local-auth.ps1 -Action test
+      - run: uv run --frozen --extra test --no-sync python -m tools.evaluate_golden --baseline evaluations/baselines/lather-golden-v1-r4.json --output ../docs/security/golden-regression.json
+        working-directory: backend
+        env:
+          LATHER_ENVIRONMENT: 'test'
+          LATHER_CHAOS_ENABLED: 'true'
+          LATHER_EVALUATIONS_ENABLED: 'true'
+          LATHER_TRACE_ENABLED: 'false'
+          LATHER_TRACE_EXPORT_APPROVED: 'false'
+      - run: npm ci --prefix frontend --no-audit --fund=false
+      - run: npm exec --prefix frontend -- playwright install --with-deps chromium
+      - run: npm run build --prefix frontend
+      - run: uv run --frozen --extra test --no-sync python -m tools.prepare_report_ui
+        working-directory: backend
+      - run: uv run --frozen --extra test --no-sync python -m tools.prepare_history_ui
+        working-directory: backend
+      - run: uv run --frozen --extra test --no-sync python -m tools.chaos_demo --output ../docs/security/chaos-regression.json
+        working-directory: backend
+        env:
+          LATHER_ENVIRONMENT: 'test'
+          LATHER_CHAOS_ENABLED: 'true'
+      - run: npm run test:e2e --prefix frontend
+        env:
+          LATHER_UI_INTEGRATION: '1'
+          LATHER_UI_CHAOS: '1'
+      - if: always()
+        shell: pwsh
+        run: ./scripts/local-auth.ps1 -Action stop
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: persisted-ui-screenshots
+          include-hidden-files: true
+          path: |
+            .cache/current-history-regression
+            .cache/current-chaos-regression
+            docs/security/golden-regression.json
+            docs/security/golden-regression.traces.json
+            docs/security/chaos-regression.json
+  ui-visual:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.11.0'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci --prefix frontend --no-audit --fund=false
+      - run: npm exec --prefix frontend -- playwright install chromium
+      - run: npm run build --prefix frontend
+      - run: npm run test:e2e --prefix frontend -- --grep-invert 'UI-API|UI-PERSIST|UI-HISTORY|UI-CHAOS'
+  public-dependency-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
+      - run: python backend/tools/security_audit.py --online --output docs/security/dependency-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-dependency-audit
+          path: docs/security/dependency-audit.json

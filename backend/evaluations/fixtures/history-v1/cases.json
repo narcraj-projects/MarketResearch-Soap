@@ -1,0 +1,126 @@
+{
+  "label": "DEMO",
+  "dataset_version": "history-demo-v1",
+  "generator": "tests/history_support.py",
+  "base": "research-v1/R01-complete.json via analysis_support",
+  "cases": [
+    {
+      "id": "HV01",
+      "mode": "same",
+      "field": "price",
+      "expected": "unchanged",
+      "gone": 0
+    },
+    {
+      "id": "HV02",
+      "mode": "price",
+      "field": "price",
+      "expected": "changed",
+      "gone": 0
+    },
+    {
+      "id": "HV03",
+      "mode": "unavailable",
+      "field": "price",
+      "expected": "unknown",
+      "gone": 0
+    },
+    {
+      "id": "HV04",
+      "mode": "currency",
+      "field": "price",
+      "expected": "unknown",
+      "gone": 0
+    },
+    {
+      "id": "HV05",
+      "mode": "pack",
+      "field": "price",
+      "expected": "unknown",
+      "gone": 0
+    },
+    {
+      "id": "HV06",
+      "mode": "conflict",
+      "field": "price",
+      "expected": "unknown",
+      "gone": 0
+    },
+    {
+      "id": "HV07",
+      "mode": "new",
+      "field": "product",
+      "expected": "new",
+      "gone": 0
+    },
+    {
+      "id": "HV08",
+      "mode": "gone",
+      "field": "availability",
+      "expected": "gone",
+      "gone": 1
+    },
+    {
+      "id": "HV09",
+      "mode": "out_of_stock",
+      "field": "availability",
+      "expected": "changed",
+      "gone": 0
+    },
+    {
+      "id": "HV10",
+      "mode": "cached",
+      "field": "price",
+      "expected": "stale",
+      "gone": 0
+    },
+    {
+      "id": "HV11",
+      "mode": "aged",
+      "field": "price",
+      "expected": "stale",
+      "gone": 0
+    },
+    {
+      "id": "HV12",
+      "mode": "omission",
+      "field": "marketing_claim",
+      "expected": "unknown",
+      "gone": 0
+    },
+    {
+      "id": "HV13",
+      "mode": "same",
+      "field": "price",
+      "expected": "unknown",
+      "gone": 0,
+      "before_mode": "unavailable"
+    },
+    {
+      "id": "HV19",
+      "mode": "wrong_offer",
+      "field": "availability",
+      "expected": "unknown"
+    },
+    {
+      "id": "HV20",
+      "mode": "evolution",
+      "field": "price",
+      "expected": "changed",
+      "gone": 1
+    },
+    {
+      "id": "HV21",
+      "before_mode": "long_before",
+      "mode": "unavailable",
+      "field": "price",
+      "expected": "stale"
+    },
+    {
+      "id": "HV22",
+      "mode": "denied",
+      "field": "price",
+      "expected": "unknown"
+    }
+  ]
+}

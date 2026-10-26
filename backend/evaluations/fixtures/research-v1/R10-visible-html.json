@@ -1,0 +1,59 @@
+{
+  "label": "DEMO",
+  "schema_version": "research-1.0",
+  "dataset_version": "research-demo-v1",
+  "origin": "Synthetic public HTML/news/DNS recordings; no real competitor or network capture.",
+  "competitor": {
+    "name": "DEMO Maker A",
+    "url": "https://demo-a.invalid/soap"
+  },
+  "dns": {
+    "demo-a.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "news.invalid": [
+      [
+        "93.184.216.34"
+      ]
+    ],
+    "api.tavily.com": [
+      [
+        "93.184.216.34"
+      ]
+    ]
+  },
+  "responses": {
+    "GET https://demo-a.invalid/robots.txt": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "User-agent: *\nAllow: /\n",
+          "content_type": "text/plain"
+        },
+        "query": null
+      }
+    ],
+    "GET https://demo-a.invalid/soap": [
+      {
+        "reply": {
+          "status": 200,
+          "body": "<html><h1>DEMO visible soap</h1><dl><dt>SKU</dt><dd>DEMO-HTML-100</dd><dt>Price</dt><dd>INR 125</dd><dt>Weight</dt><dd>100 g</dd><dt>Weight basis</dt><dd>total_pack</dd><dt>Pack quantity</dt><dd>1</dd><dt>Ingredients</dt><dd>DEMO olive oil, water</dd><dt>Claims</dt><dd>DEMO gentle skin marketing claim</dd><dt>Channels</dt><dd>Own shop</dd><dt>Reviews</dt><dd>DEMO public review excerpt</dd><dt>Launch</dt><dd>DEMO new range announced</dd><dt>Packaging</dt><dd>DEMO recyclable claim</dd><dt>Positioning</dt><dd>DEMO ingredient-led</dd><dt>Audience</dt><dd>DEMO target shopper</dd></dl></html>",
+          "content_type": "text/html"
+        },
+        "query": null
+      }
+    ]
+  },
+  "expected": {
+    "products": 1,
+    "amounts": [
+      "125"
+    ],
+    "totals": [
+      "100"
+    ]
+  },
+  "case_id": "R10-visible-html"
+}

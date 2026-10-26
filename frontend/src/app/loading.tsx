@@ -1,0 +1,1 @@
+export default function Loading() { return <main id="main" className="container state-panel" aria-busy="true"><h1>Loading your workspace…</h1><p role="status">Please wait.</p><div className="skeleton"/></main>; }

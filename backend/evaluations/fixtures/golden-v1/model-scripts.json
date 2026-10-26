@@ -1,0 +1,19 @@
+{
+  "label": "DEMO",
+  "schema_version": "model-fixtures-1.0",
+  "dataset_version": "lather-golden-v1",
+  "origin": "synthetic frozen rule-output projections, not provider captures",
+  "D10": [
+    {
+      "raw": "{DEMO malformed"
+    },
+    {
+      "raw": "{DEMO malformed again"
+    }
+  ],
+  "D12": [
+    {
+      "template": "unsupported_material_claim"
+    }
+  ]
+}

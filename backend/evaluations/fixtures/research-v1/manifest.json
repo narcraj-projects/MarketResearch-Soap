@@ -1,0 +1,30 @@
+{
+  "label": "DEMO",
+  "dataset_version": "research-demo-v1",
+  "sha256": {
+    "R01-complete.json": "a366018352fcd43ca70cf0803f4e12d047512d7fbf27a56e3388d593e69838d9",
+    "R02-inaccessible.json": "c2a41076e5ec8b7deadb4d7e6d2d616835a0941bbd50ec223495414ad39c300d",
+    "R03-robots-deny.json": "b959174eceae0a40116b1543cd5697901dc0bc8e5602495561d7a7cac5c2ae91",
+    "R04-ambiguous-pack.json": "2a41be8a95dfb5e055b75151e0406dfaac99d72f54c7667122521ca8df584434",
+    "R05-contradiction.json": "854dbfae70e91fd152327f55c88986b773608cb162a0124bdb0c52560479557e",
+    "R06-unknown-fields.json": "675fd9ea43f33322d4ea7860903b8a074fa2eed5f7b930b86ac408408f074490",
+    "R07-offer-mismatch.json": "8b5117e9f4d7be9e08cbe30f0543b7d112670763a4c205a86ee3d214619a7a7d",
+    "R08-paywall.json": "d590a2a6c065d6c62e8d4be32b99e78d906f16f499fd595338cc2346e0806e84",
+    "R09-malformed.json": "0973a2b342febfc5b0b89efe60a022df865877c4db8d4c805d3b82bd050d8b9d",
+    "R10-visible-html.json": "642bf76d1f834bf4d3e82fd8f9ede5ce8678e3df28ae50eec229c78ae80ab0c9",
+    "R11-private-dns.json": "d2d2bf3779aa6583d0867aeb6c1a3ae2ccd34ca60f810046691cfd7f9d70bc76",
+    "R12-private-redirect.json": "516a52721ecb42bb04106e06084ad3f6b66d934ab011552f7cd55266a7fe30cd",
+    "R13-peer-mismatch.json": "9cdcb850f49dae32e75795680485fda045fca2e79e243d5927286709acbe25b4",
+    "R14-retry.json": "6b11bf8e5d1893592218be17c389fa8fa86df605743be17904766eea85674e99",
+    "R15-robots-unavailable.json": "83250d7da7144bcd226ac6c60106c09a5048ff4e868c26332820d65c61b2f163",
+    "R16-safe-redirect.json": "97cd70123d0a37b72f6e4210068bba637b11d6faf94e42208e9de2cc77fffc8f",
+    "R17-encoding.json": "4afbe2a8af16ec27d0003d4352261797d5839deffe312bc5232b4713793c406a",
+    "R18-cross-brand.json": "5116749d1b38aedb03c8e163c6b3441ce9ff4b31a6a3bab0daaf006719b24529",
+    "R19-news.json": "79125d9ba07f08055ff6fb31de88a3ec815a1915f920f0ebed07bcb10540be91",
+    "R20-noarchive.json": "9657d1db97f0640f5a9be757cf5c2623d8f29085d4e8e5668d8df2b0c9993e3c",
+    "R21-parallel.json": "ddaa944d454a18e7b59fe05828f17cd4ab3ccae7a914deea8c49d0186b881c43",
+    "R22-dns-rebinding.json": "21379c47a2b7c1f02a76b6f61913e18c4af3637c5cc5a1ed3d73595f0c22fcd3",
+    "R23-parallel-blocked.json": "a3f7846b0a7d55ca815f5d6561de669d294b197777719617e152fba25dd6c6a3",
+    "R24-crawl-delay.json": "9be4659f47332612512fd54343df5d0eab83b74c29bbcdd0a7370ec91dd87163"
+  }
+}

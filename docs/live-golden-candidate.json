@@ -1,0 +1,2304 @@
+{
+  "schema_version": "evaluation-report-1.0",
+  "label": "DEMO",
+  "dataset_version": "lather-golden-v1",
+  "manifest_hash": "6f60321ef33c7faa8019b09fcc00866427e9d007282b2e38ed3bc82e40ead14a",
+  "versions": {
+    "graph": "workflow-1.2",
+    "provider": "none",
+    "model": "none",
+    "prompt": "DEMO-frozen-analysis-1.0",
+    "tools": [
+      "tavily-search-1.0",
+      "public-research-1.0",
+      "model-replay-1.0"
+    ],
+    "graders": "graders-1.0",
+    "langsmith_sdk": "0.14.12"
+  },
+  "sample_size": 17,
+  "passed": 17,
+  "ci_deterministic_pass": true,
+  "release_ready": false,
+  "release_blockers": [
+    "Recorded DEMO data cannot establish live-market or model-quality acceptance",
+    "No final provider-neutral model benchmark/selection",
+    "Material source support is not fully human-adjudicated at >=90% for each evaluated report",
+    "Five actual business-owner usefulness ratings with >=4 useful are missing or fail",
+    "Initial baseline awaits user review",
+    "No passing, comparable baseline regression result"
+  ],
+  "gates": {
+    "A01": {
+      "status": "passed_controlled",
+      "scope": "Recorded relevance/provenance; live competitor adequacy remains unmeasured"
+    },
+    "A02": {
+      "status": "not_evaluated",
+      "threshold": ">=90%",
+      "reports": {
+        "ed0bb6c8-6552-5dd2-8ead-0f703e3fdfb9": {
+          "material_claims": 49,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "62b47969-0d11-54ad-9629-9bc077239ed8": {
+          "material_claims": 32,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "a3213790-1ae1-5c11-9bce-1cc8292758e5": {
+          "material_claims": 49,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "a3b5a684-1a6f-56bc-919d-4a7a3eb7565d": {
+          "material_claims": 34,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "3aa8127b-dca5-5494-a983-05328b737486": {
+          "material_claims": 66,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "71f1ac1f-8c42-5c52-b9e9-09f7efb0355c": {
+          "material_claims": 46,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "47bf64cf-14b4-56c6-bcd2-4584fee83838": {
+          "material_claims": 49,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "0ac4f7d2-7c79-5214-b600-fa69b62ab157": {
+          "material_claims": 49,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "a754cb0a-1c7e-5c24-bd0c-5878642055aa": {
+          "material_claims": 49,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "2f46b397-9438-57ae-a032-ca3471a11eed": {
+          "material_claims": 49,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        },
+        "acaad1f6-9dad-50f2-ace7-180d90e2dca3": {
+          "material_claims": 49,
+          "reviewed": 0,
+          "supported": 0,
+          "confirmed_lower_bound": null,
+          "support_coverage": null,
+          "status": "not_evaluated"
+        }
+      }
+    },
+    "A03": {
+      "status": "passed_controlled"
+    },
+    "A04": {
+      "status": "not_evaluated",
+      "denominator": 5,
+      "rated": 0,
+      "useful": null
+    },
+    "A05": {
+      "cohort": [
+        "D04",
+        "D05",
+        "D06",
+        "D10",
+        "D12"
+      ],
+      "denominator": 5,
+      "handled": 5,
+      "status": "passed_controlled",
+      "scope": "predeclared recorded DEMO failure tests, not live research quality"
+    },
+    "A06": {
+      "status": "passed_controlled"
+    },
+    "A07": {
+      "status": "passed_controlled",
+      "scope": "Controlled identity/medical negative controls, not independent live factual review"
+    },
+    "A08": {
+      "status": "passed_controlled"
+    }
+  },
+  "regression": {
+    "status": "not_compared",
+    "critical_regression": null
+  },
+  "owner_report_cohort": [
+    {
+      "case_id": "D01",
+      "run_id": "de85747f-b07e-4ec9-9748-dba25d9656da",
+      "report_id": "ed0bb6c8-6552-5dd2-8ead-0f703e3fdfb9",
+      "report_hash": "88e2b793dca27afbd42f9f9d9057224ab06155269f50be9f17f327e2439c5184",
+      "label": "DEMO"
+    },
+    {
+      "case_id": "D02",
+      "run_id": "530d8268-ea80-48ec-8d38-8f74f4ea604c",
+      "report_id": "62b47969-0d11-54ad-9629-9bc077239ed8",
+      "report_hash": "0c187289a8f802a42eb83c86e3bea3a85db2f5a02eea6e80554b43813822c0bc",
+      "label": "DEMO"
+    },
+    {
+      "case_id": "D07",
+      "run_id": "9ca1c126-1bf9-488c-990b-5207183894e4",
+      "report_id": "3aa8127b-dca5-5494-a983-05328b737486",
+      "report_hash": "ff37bafe984c5603befe8186870215daa1605e6ce747a178c5f703496674ced0",
+      "label": "DEMO"
+    },
+    {
+      "case_id": "D08",
+      "run_id": "db1df9a4-b5b7-4294-b2b4-0745714b089c",
+      "report_id": "71f1ac1f-8c42-5c52-b9e9-09f7efb0355c",
+      "report_hash": "e0ee3b9a56648dd080fbb27423df921c51c2a9b18ece2300426089b6484a88b3",
+      "label": "DEMO"
+    },
+    {
+      "case_id": "D11",
+      "run_id": "07d09907-b402-4707-bf61-f86590d605b9",
+      "report_id": "0ac4f7d2-7c79-5214-b600-fa69b62ab157",
+      "report_hash": "af9a1a401c606ff98b409fad7404526aa82652cc7c628122b1b2842195f3c2bc",
+      "label": "DEMO"
+    }
+  ],
+  "actual_provider_calls": 0,
+  "actual_provider_tokens": 0,
+  "provider_cost_usd": "0",
+  "langsmith_remote_exports": 0,
+  "model_fixture_origin": "synthetic frozen rule projections, not captured provider responses",
+  "cases": [
+    {
+      "label": "DEMO",
+      "case_id": "D01",
+      "run_id": "de85747f-b07e-4ec9-9748-dba25d9656da",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D01",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:18.094571Z",
+        "ended_at": "2026-10-26T04:41:23.905493Z",
+        "latency_ms": 5811,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "de85747f-b07e-4ec9-9748-dba25d9656da",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "de85747f-b07e-4ec9-9748-dba25d9656da",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 9,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "de85747f-b07e-4ec9-9748-dba25d9656da",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 49,
+          "cited": 49,
+          "intact_quotes": 49,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D02",
+      "run_id": "530d8268-ea80-48ec-8d38-8f74f4ea604c",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D02",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:24.001084Z",
+        "ended_at": "2026-10-26T04:41:28.649689Z",
+        "latency_ms": 4648,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 8,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 2,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 2,
+        "attempts_by_tool": {
+          "public.news": 2,
+          "public.retrieve": 4,
+          "public.search": 2
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "530d8268-ea80-48ec-8d38-8f74f4ea604c",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 2,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "530d8268-ea80-48ec-8d38-8f74f4ea604c",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 6,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "530d8268-ea80-48ec-8d38-8f74f4ea604c",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 32,
+          "cited": 32,
+          "intact_quotes": 32,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D03",
+      "run_id": "55d6c760-00aa-4303-bfe7-a394ae53f47b",
+      "status": "partial",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D03",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:28.696866Z",
+        "ended_at": "2026-10-26T04:41:29.489712Z",
+        "latency_ms": 793,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 2,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "partial",
+        "competitors": 0,
+        "nodes": [
+          "validate",
+          "discover"
+        ],
+        "reports": 0,
+        "tasks": 0,
+        "attempts_by_tool": {
+          "public.search": 2
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "55d6c760-00aa-4303-bfe7-a394ae53f47b",
+            "state": "finished",
+            "recorded_search_dispatches": 2,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": null
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D04",
+      "run_id": "8937e0eb-f2dd-4980-addf-9cbae768a436",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D04",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:29.508497Z",
+        "ended_at": "2026-10-26T04:41:33.771523Z",
+        "latency_ms": 4263,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 12,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": [
+          0.5,
+          1.0
+        ]
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 5,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "8937e0eb-f2dd-4980-addf-9cbae768a436",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "8937e0eb-f2dd-4980-addf-9cbae768a436",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 11,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "8937e0eb-f2dd-4980-addf-9cbae768a436",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 49,
+          "cited": 49,
+          "intact_quotes": 49,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D05",
+      "run_id": null,
+      "status": "component_complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Actual deterministic component subcases; not an end-to-end workflow/semantic review."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Actual deterministic component subcases; not an end-to-end workflow/semantic review."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Actual deterministic component subcases; not an end-to-end workflow/semantic review."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D05",
+          "passed": true,
+          "critical": true,
+          "reason": "Actual deterministic component subcases; not an end-to-end workflow/semantic review."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:33.883188Z",
+        "ended_at": "2026-10-26T04:41:33.892174Z",
+        "latency_ms": 9,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 3,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "subcases": [
+          {
+            "dispatches": 2,
+            "stop": null,
+            "sources": 3,
+            "delays": [
+              2.0
+            ],
+            "retry_after": 2.0,
+            "completed_attempts": 2
+          },
+          {
+            "dispatches": 1,
+            "stop": "deadline",
+            "sources": 0,
+            "delays": [],
+            "retry_after": 999999.0,
+            "completed_attempts": 1
+          }
+        ]
+      },
+      "diagnostics": {
+        "scope": "component"
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D06",
+      "run_id": "16757f72-256a-490a-aa4c-386b2a778237",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D06",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:33.892328Z",
+        "ended_at": "2026-10-26T04:41:37.786412Z",
+        "latency_ms": 3894,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "16757f72-256a-490a-aa4c-386b2a778237",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "16757f72-256a-490a-aa4c-386b2a778237",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 9,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "16757f72-256a-490a-aa4c-386b2a778237",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 34,
+          "cited": 34,
+          "intact_quotes": 34,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D07",
+      "run_id": "9ca1c126-1bf9-488c-990b-5207183894e4",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D07",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:37.844413Z",
+        "ended_at": "2026-10-26T04:41:41.853795Z",
+        "latency_ms": 4009,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 12,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 8,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "9ca1c126-1bf9-488c-990b-5207183894e4",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "9ca1c126-1bf9-488c-990b-5207183894e4",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 11,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "9ca1c126-1bf9-488c-990b-5207183894e4",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 66,
+          "cited": 66,
+          "intact_quotes": 66,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D08",
+      "run_id": "db1df9a4-b5b7-4294-b2b4-0745714b089c",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D08",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:41.937043Z",
+        "ended_at": "2026-10-26T04:41:45.961348Z",
+        "latency_ms": 4024,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "db1df9a4-b5b7-4294-b2b4-0745714b089c",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "db1df9a4-b5b7-4294-b2b4-0745714b089c",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 9,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "db1df9a4-b5b7-4294-b2b4-0745714b089c",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 46,
+          "cited": 46,
+          "intact_quotes": 46,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D09",
+      "run_id": "5942d7b4-9a8e-4699-b3db-1ccaba26b94c",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D09",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:46.051268Z",
+        "ended_at": "2026-10-26T04:41:50.053721Z",
+        "latency_ms": 4002,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "5942d7b4-9a8e-4699-b3db-1ccaba26b94c",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "5942d7b4-9a8e-4699-b3db-1ccaba26b94c",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 9,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "5942d7b4-9a8e-4699-b3db-1ccaba26b94c",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 49,
+          "cited": 49,
+          "intact_quotes": 49,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D10",
+      "run_id": "b051c8e1-81e4-43e7-92c6-e63f20213fd5",
+      "status": "partial",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D10",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:50.119278Z",
+        "ended_at": "2026-10-26T04:41:54.516426Z",
+        "latency_ms": 4397,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 12,
+        "reserved_calls": 0,
+        "model_replay_attempts": 2,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "partial",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize"
+        ],
+        "reports": 0,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "model.generate": 2,
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 2,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "b051c8e1-81e4-43e7-92c6-e63f20213fd5",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "b051c8e1-81e4-43e7-92c6-e63f20213fd5",
+            "state": "stopped",
+            "code": "workflow_policy_stop",
+            "actual_external_calls": 0
+          }
+        ],
+        "citations": null
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D11",
+      "run_id": "07d09907-b402-4707-bf61-f86590d605b9",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D11",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:41:54.540426Z",
+        "ended_at": "2026-10-26T04:41:59.932438Z",
+        "latency_ms": 5392,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "07d09907-b402-4707-bf61-f86590d605b9",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "07d09907-b402-4707-bf61-f86590d605b9",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 9,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "07d09907-b402-4707-bf61-f86590d605b9",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 49,
+          "cited": 49,
+          "intact_quotes": 49,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D12",
+      "run_id": "c12727c7-00c9-4895-9a9f-099445f24c9a",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D12",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:42:00.026755Z",
+        "ended_at": "2026-10-26T04:42:05.102517Z",
+        "latency_ms": 5076,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 11,
+        "reserved_calls": 0,
+        "model_replay_attempts": 1,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review",
+          "revise",
+          "analyze",
+          "review"
+        ],
+        "reports": 2,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "model.generate": 1,
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 1
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "c12727c7-00c9-4895-9a9f-099445f24c9a",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "c12727c7-00c9-4895-9a9f-099445f24c9a",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 9,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "c12727c7-00c9-4895-9a9f-099445f24c9a",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "citations": {
+          "material_claims": 49,
+          "cited": 49,
+          "intact_quotes": 49,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D13",
+      "run_id": "4f9a2aef-8708-48df-9f4a-210c07ac3d0c",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D13",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:42:05.162924Z",
+        "ended_at": "2026-10-26T04:42:27.930624Z",
+        "latency_ms": 22767,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "4f9a2aef-8708-48df-9f4a-210c07ac3d0c",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "state": "idle",
+            "actual_external_calls": 0
+          },
+          {
+            "state": "interrupted",
+            "exit_code": 23,
+            "actual_external_calls": 0
+          },
+          {
+            "label": "DEMO",
+            "run_id": "4f9a2aef-8708-48df-9f4a-210c07ac3d0c",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 6,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "4f9a2aef-8708-48df-9f4a-210c07ac3d0c",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "pending_shortlist_preserved": true,
+        "preserved_task_and_sources": true,
+        "remaining_web_dispatches": 6,
+        "stale_writer_fenced": true,
+        "pending_report_preserved": true,
+        "citations": {
+          "material_claims": 49,
+          "cited": 49,
+          "intact_quotes": 49,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D14",
+      "run_id": "a0e5ca31-3b9a-4816-8df0-556ce026b72a",
+      "status": "report_review",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D14",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:42:28.026061Z",
+        "ended_at": "2026-10-26T04:42:33.152180Z",
+        "latency_ms": 5126,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "report_review",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "a0e5ca31-3b9a-4816-8df0-556ce026b72a",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "a0e5ca31-3b9a-4816-8df0-556ce026b72a",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 9,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "approval_negatives": 8,
+        "citations": {
+          "material_claims": 49,
+          "cited": 49,
+          "intact_quotes": 49,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D15",
+      "run_id": null,
+      "status": "component_complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Actual deterministic component subcases; not an end-to-end workflow/semantic review."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D15",
+          "passed": true,
+          "critical": true,
+          "reason": "Actual deterministic component subcases; not an end-to-end workflow/semantic review."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:42:33.171083Z",
+        "ended_at": "2026-10-26T04:42:33.262104Z",
+        "latency_ms": 91,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 0,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "price_counts": {
+          "new": 0,
+          "changed": 1,
+          "gone": 0,
+          "unchanged": 40,
+          "unknown": 1,
+          "stale": 0
+        },
+        "gap_counts": {
+          "new": 0,
+          "changed": 0,
+          "gone": 0,
+          "unchanged": 27,
+          "unknown": 27,
+          "stale": 0
+        }
+      },
+      "diagnostics": {
+        "scope": "component"
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D16",
+      "run_id": "a63e91d0-02e8-4e6e-b23b-4dd42f8b4a62",
+      "status": "cancelled",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D16",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:42:33.262583Z",
+        "ended_at": "2026-10-26T04:42:36.304309Z",
+        "latency_ms": 3042,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 3,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "cancelled",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.retrieve": 2,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "a63e91d0-02e8-4e6e-b23b-4dd42f8b4a62",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "a63e91d0-02e8-4e6e-b23b-4dd42f8b4a62",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 2,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "partial_after_cancel_preserved": true,
+        "citations": {
+          "material_claims": 0,
+          "cited": 0,
+          "intact_quotes": 0,
+          "citation_presence": null,
+          "quote_integrity": null,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    },
+    {
+      "label": "DEMO",
+      "case_id": "D17",
+      "run_id": "1cdcfc07-27fb-4f22-98d9-1524dfaa819d",
+      "status": "complete",
+      "grades": [
+        {
+          "grader_version": "graders-1.0",
+          "name": "schema",
+          "passed": true,
+          "critical": true,
+          "reason": "Persisted artifacts validate; expected malformed outputs are checked separately."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "permissions",
+          "passed": true,
+          "critical": true,
+          "reason": "Every observed dispatched tool belongs to its agent allowlist."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "tool_arguments",
+          "passed": true,
+          "critical": true,
+          "reason": "Exact replay transports validated wire arguments; journals have typed outcomes, hashes, unique bounded attempts and budget caps."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "trajectory",
+          "passed": true,
+          "critical": true,
+          "reason": "Observed partial order, bounded revision and both durable human gates; parallel sibling interleaving is unrestricted."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "no_invented_competitors",
+          "passed": true,
+          "critical": true,
+          "reason": "Selected identities resolve to actual recorded search evidence, unique domains and explicit shortfalls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "math",
+          "passed": true,
+          "critical": true,
+          "reason": "Independent Decimal arithmetic and declared SKU/pack eligibility expectations, including nulls."
+        },
+        {
+          "grader_version": "graders-1.0",
+          "name": "D17",
+          "passed": true,
+          "critical": true,
+          "reason": "Declared case outcome and its fault/negative-control assertions."
+        }
+      ],
+      "measurement": {
+        "started_at": "2026-10-26T04:42:36.335780Z",
+        "ended_at": "2026-10-26T04:42:40.643384Z",
+        "latency_ms": 4308,
+        "latency_scope": "local_recorded_execution",
+        "completed_calls": 10,
+        "reserved_calls": 0,
+        "model_replay_attempts": 0,
+        "provider_calls": 0,
+        "provider_tokens": 0,
+        "token_scope": "no_provider_called_not_a_token_estimate",
+        "provider_cost_usd": "0",
+        "cost_upper_bound_usd": "0E-8",
+        "virtual_retry_delays_seconds": []
+      },
+      "signature": {
+        "status": "complete",
+        "competitors": 3,
+        "nodes": [
+          "validate",
+          "discover",
+          "research",
+          "normalize",
+          "analyze",
+          "review"
+        ],
+        "reports": 1,
+        "tasks": 3,
+        "attempts_by_tool": {
+          "public.news": 3,
+          "public.retrieve": 6,
+          "public.search": 1
+        },
+        "model_invalid": 0,
+        "revisions": 0
+      },
+      "diagnostics": {
+        "phase_results": [
+          {
+            "label": "DEMO",
+            "run_id": "1cdcfc07-27fb-4f22-98d9-1524dfaa819d",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 1,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "1cdcfc07-27fb-4f22-98d9-1524dfaa819d",
+            "state": "approval_pending",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 9,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          },
+          {
+            "label": "DEMO",
+            "run_id": "1cdcfc07-27fb-4f22-98d9-1524dfaa819d",
+            "state": "finished",
+            "recorded_search_dispatches": 0,
+            "recorded_web_dispatches": 0,
+            "actual_external_calls": 0,
+            "live_tool_dispatches": 0,
+            "mode": "replay"
+          }
+        ],
+        "idempotency_checked": true,
+        "citations": {
+          "material_claims": 49,
+          "cited": 49,
+          "intact_quotes": 49,
+          "citation_presence": 1.0,
+          "quote_integrity": 1.0,
+          "genuine_support_coverage": null,
+          "semantic_support": "not_adjudicated"
+        }
+      }
+    }
+  ]
+}
